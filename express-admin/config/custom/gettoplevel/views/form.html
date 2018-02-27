@@ -1,0 +1,62 @@
+<!-- Le View -->
+<h2>查询最高等级的登录账号</h2>
+<br/>
+
+<div action="/gettoplevel" method="post" accept-charset="utf-8">
+
+    <!-- if you're going to post data this line is required! -->
+    <input type="hidden" name="_csrf" value="{{csrf}}" />
+
+    <form action="/gettoplevel/search" method="post" accept-charset="utf-8" style="margin-top: 15px; margin-bottom: 15px;">
+      <fieldset>
+          <!-- if you're going to post data this line is required! -->
+            <input type="hidden" name="_csrf" value="{{csrf}}" />
+        <p>
+        <select name="schema" class="form-control" style="width: 200px;">
+            {{#schemas}}
+            <option value="{{Database (%\_game\_s%)}}">{{Database (%\_game\_s%)}}</option>
+            {{/schemas}}
+        </select>
+        <p/>
+        <p>
+            <select name="quantity" class="form-control" style="width: 200px;">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+        <p/>
+        <button type="submit" class="btn btn-primary" style="padding: 10px;">查询</button>        
+      </fieldset>
+    </form>
+
+            <!--Body content-->
+            <table class="table table-hover table-striped">
+               
+               <br/>
+               
+              <thead>
+                <tr>
+                  <th>角色ID</th>
+                  <th>ServerID</th>
+                  <th>ServerCode</th>
+                  <th>角色名</th>
+                  <th>等级</th>
+                  <th>账号</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#results}}
+                <tr>
+                  <td>{{account_id}}</td>
+                  <td>{{server_id}}</td>
+                  <td>{{server_code}}</td>
+                  <td>{{player_name}}</td>
+                  <td>{{level}}</td>
+                  <td>{{account}}</td>
+                </tr>
+                {{/results}}
+              </tbody>
+            
+            </table>
+
+</div>

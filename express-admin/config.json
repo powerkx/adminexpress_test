@@ -1,0 +1,15 @@
+{
+    "mysql": {
+        "database": "mysql",
+        "user": "qifun_slg",
+        "password": "NzFhZjUwNTE6ZDcz"
+    },
+    "server": {
+        "port": 8899
+    },
+    "app": {
+        "layouts": false,
+        "themes": false,
+        "languages": false
+    }
+}

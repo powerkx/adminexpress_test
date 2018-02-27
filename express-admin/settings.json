@@ -1,0 +1,5265 @@
+{
+    "columns_priv": {
+        "slug": "columns_priv",
+        "table": {
+            "name": "columns_priv",
+            "pk": [
+                "Host",
+                "Db",
+                "User",
+                "Table_name",
+                "Column_name"
+            ],
+            "verbose": "columns_priv"
+        },
+        "columns": [
+            {
+                "name": "Host",
+                "verbose": "Host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(60)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Db",
+                "verbose": "Db",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "User",
+                "verbose": "User",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Table_name",
+                "verbose": "Table_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Column_name",
+                "verbose": "Column_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Timestamp",
+                "verbose": "Timestamp",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Column_priv",
+                "verbose": "Column_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "set('Select','Insert','Update','References')",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "db": {
+        "slug": "db",
+        "table": {
+            "name": "db",
+            "pk": [
+                "Host",
+                "Db",
+                "User"
+            ],
+            "verbose": "db"
+        },
+        "columns": [
+            {
+                "name": "Host",
+                "verbose": "Host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(60)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Db",
+                "verbose": "Db",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "User",
+                "verbose": "User",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Select_priv",
+                "verbose": "Select_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Insert_priv",
+                "verbose": "Insert_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Update_priv",
+                "verbose": "Update_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Delete_priv",
+                "verbose": "Delete_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_priv",
+                "verbose": "Create_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Drop_priv",
+                "verbose": "Drop_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Grant_priv",
+                "verbose": "Grant_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "References_priv",
+                "verbose": "References_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Index_priv",
+                "verbose": "Index_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Alter_priv",
+                "verbose": "Alter_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_tmp_table_priv",
+                "verbose": "Create_tmp_table_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Lock_tables_priv",
+                "verbose": "Lock_tables_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_view_priv",
+                "verbose": "Create_view_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Show_view_priv",
+                "verbose": "Show_view_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_routine_priv",
+                "verbose": "Create_routine_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Alter_routine_priv",
+                "verbose": "Alter_routine_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Execute_priv",
+                "verbose": "Execute_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Event_priv",
+                "verbose": "Event_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Trigger_priv",
+                "verbose": "Trigger_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "engine_cost": {
+        "slug": "engine_cost",
+        "table": {
+            "name": "engine_cost",
+            "pk": [
+                "engine_name",
+                "device_type",
+                "cost_name"
+            ],
+            "verbose": "engine_cost"
+        },
+        "columns": [
+            {
+                "name": "engine_name",
+                "verbose": "engine_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "device_type",
+                "verbose": "device_type",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "cost_name",
+                "verbose": "cost_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "cost_value",
+                "verbose": "cost_value",
+                "control": {
+                    "text": true
+                },
+                "type": "float",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "last_update",
+                "verbose": "last_update",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "comment",
+                "verbose": "comment",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(1024)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "event": {
+        "slug": "event",
+        "table": {
+            "name": "event",
+            "pk": [
+                "db",
+                "name"
+            ],
+            "verbose": "event"
+        },
+        "columns": [
+            {
+                "name": "db",
+                "verbose": "db",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "body",
+                "verbose": "body",
+                "control": {
+                    "text": true
+                },
+                "type": "longblob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "definer",
+                "verbose": "definer",
+                "control": {
+                    "text": true
+                },
+                "type": "char(93)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "execute_at",
+                "verbose": "execute_at",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "interval_value",
+                "verbose": "interval_value",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "interval_field",
+                "verbose": "interval_field",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('YEAR','QUARTER','MONTH','DAY','HOUR','MINUTE','WEEK','SECOND','MICROSECOND','YEAR_MONTH','DAY_HOUR','DAY_MINUTE','DAY_SECOND','HOUR_MINUTE','HOUR_SECOND','MINUTE_SECOND','DAY_MICROSECOND','HOUR_MICROSECOND','MINUTE_MICROSECOND','SECOND_MICROSECOND')",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "created",
+                "verbose": "created",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "modified",
+                "verbose": "modified",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "0000-00-00 00:00:00",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "last_executed",
+                "verbose": "last_executed",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "starts",
+                "verbose": "starts",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ends",
+                "verbose": "ends",
+                "control": {
+                    "text": true
+                },
+                "type": "datetime",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "status",
+                "verbose": "status",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('ENABLED','DISABLED','SLAVESIDE_DISABLED')",
+                "allowNull": false,
+                "defaultValue": "ENABLED",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "on_completion",
+                "verbose": "on_completion",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('DROP','PRESERVE')",
+                "allowNull": false,
+                "defaultValue": "DROP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "sql_mode",
+                "verbose": "sql_mode",
+                "control": {
+                    "text": true
+                },
+                "type": "set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','NOT_USED','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_ALL_TABLES','NO_ZERO_IN_DATE','NO_ZERO_DATE','INVALID_DATES','ERROR_FOR_DIVISION_BY_ZERO','TRADITIONAL','NO_AUTO_CREATE_USER','HIGH_NOT_PRECEDENCE','NO_ENGINE_SUBSTITUTION','PAD_CHAR_TO_FULL_LENGTH')",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "comment",
+                "verbose": "comment",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "originator",
+                "verbose": "originator",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "time_zone",
+                "verbose": "time_zone",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "SYSTEM",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "character_set_client",
+                "verbose": "character_set_client",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "collation_connection",
+                "verbose": "collation_connection",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "db_collation",
+                "verbose": "db_collation",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "body_utf8",
+                "verbose": "body_utf8",
+                "control": {
+                    "text": true
+                },
+                "type": "longblob",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "func": {
+        "slug": "func",
+        "table": {
+            "name": "func",
+            "pk": "name",
+            "verbose": "func"
+        },
+        "columns": [
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ret",
+                "verbose": "ret",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "dl",
+                "verbose": "dl",
+                "control": {
+                    "text": true
+                },
+                "type": "char(128)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "type",
+                "verbose": "type",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('function','aggregate')",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "general_log": {
+        "slug": "general_log",
+        "table": {
+            "name": "general_log",
+            "pk": "",
+            "verbose": "general_log"
+        },
+        "columns": [
+            {
+                "name": "event_time",
+                "verbose": "event_time",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp(6)",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP(6)",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "user_host",
+                "verbose": "user_host",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumtext",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "thread_id",
+                "verbose": "thread_id",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(21) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "server_id",
+                "verbose": "server_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "command_type",
+                "verbose": "command_type",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "argument",
+                "verbose": "argument",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumblob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "gtid_executed": {
+        "slug": "gtid_executed",
+        "table": {
+            "name": "gtid_executed",
+            "pk": [
+                "source_uuid",
+                "interval_start"
+            ],
+            "verbose": "gtid_executed"
+        },
+        "columns": [
+            {
+                "name": "source_uuid",
+                "verbose": "source_uuid",
+                "control": {
+                    "text": true
+                },
+                "type": "char(36)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "interval_start",
+                "verbose": "interval_start",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "interval_end",
+                "verbose": "interval_end",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "help_category": {
+        "slug": "help_category",
+        "table": {
+            "name": "help_category",
+            "pk": "help_category_id",
+            "verbose": "help_category"
+        },
+        "columns": [
+            {
+                "name": "help_category_id",
+                "verbose": "help_category_id",
+                "control": {
+                    "text": true
+                },
+                "type": "smallint(5) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "parent_category_id",
+                "verbose": "parent_category_id",
+                "control": {
+                    "text": true
+                },
+                "type": "smallint(5) unsigned",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "url",
+                "verbose": "url",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "help_keyword": {
+        "slug": "help_keyword",
+        "table": {
+            "name": "help_keyword",
+            "pk": "help_keyword_id",
+            "verbose": "help_keyword"
+        },
+        "columns": [
+            {
+                "name": "help_keyword_id",
+                "verbose": "help_keyword_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "help_relation": {
+        "slug": "help_relation",
+        "table": {
+            "name": "help_relation",
+            "pk": [
+                "help_topic_id",
+                "help_keyword_id"
+            ],
+            "verbose": "help_relation"
+        },
+        "columns": [
+            {
+                "name": "help_topic_id",
+                "verbose": "help_topic_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "help_keyword_id",
+                "verbose": "help_keyword_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "help_topic": {
+        "slug": "help_topic",
+        "table": {
+            "name": "help_topic",
+            "pk": "help_topic_id",
+            "verbose": "help_topic"
+        },
+        "columns": [
+            {
+                "name": "help_topic_id",
+                "verbose": "help_topic_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "help_category_id",
+                "verbose": "help_category_id",
+                "control": {
+                    "text": true
+                },
+                "type": "smallint(5) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "description",
+                "verbose": "description",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "example",
+                "verbose": "example",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "url",
+                "verbose": "url",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "innodb_index_stats": {
+        "slug": "innodb_index_stats",
+        "table": {
+            "name": "innodb_index_stats",
+            "pk": [
+                "database_name",
+                "table_name",
+                "index_name",
+                "stat_name"
+            ],
+            "verbose": "innodb_index_stats"
+        },
+        "columns": [
+            {
+                "name": "database_name",
+                "verbose": "database_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "table_name",
+                "verbose": "table_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "index_name",
+                "verbose": "index_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "last_update",
+                "verbose": "last_update",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "stat_name",
+                "verbose": "stat_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "stat_value",
+                "verbose": "stat_value",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "sample_size",
+                "verbose": "sample_size",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "stat_description",
+                "verbose": "stat_description",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(1024)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "innodb_table_stats": {
+        "slug": "innodb_table_stats",
+        "table": {
+            "name": "innodb_table_stats",
+            "pk": [
+                "database_name",
+                "table_name"
+            ],
+            "verbose": "innodb_table_stats"
+        },
+        "columns": [
+            {
+                "name": "database_name",
+                "verbose": "database_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "table_name",
+                "verbose": "table_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "last_update",
+                "verbose": "last_update",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "n_rows",
+                "verbose": "n_rows",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "clustered_index_size",
+                "verbose": "clustered_index_size",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "sum_of_other_index_sizes",
+                "verbose": "sum_of_other_index_sizes",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "ndb_binlog_index": {
+        "slug": "ndb_binlog_index",
+        "table": {
+            "name": "ndb_binlog_index",
+            "pk": [
+                "epoch",
+                "orig_server_id",
+                "orig_epoch"
+            ],
+            "verbose": "ndb_binlog_index"
+        },
+        "columns": [
+            {
+                "name": "Position",
+                "verbose": "Position",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "File",
+                "verbose": "File",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "epoch",
+                "verbose": "epoch",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "inserts",
+                "verbose": "inserts",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "updates",
+                "verbose": "updates",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "deletes",
+                "verbose": "deletes",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "schemaops",
+                "verbose": "schemaops",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "orig_server_id",
+                "verbose": "orig_server_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "orig_epoch",
+                "verbose": "orig_epoch",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "gci",
+                "verbose": "gci",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "next_position",
+                "verbose": "next_position",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "next_file",
+                "verbose": "next_file",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(255)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "plugin": {
+        "slug": "plugin",
+        "table": {
+            "name": "plugin",
+            "pk": "name",
+            "verbose": "plugin"
+        },
+        "columns": [
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "dl",
+                "verbose": "dl",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(128)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "proc": {
+        "slug": "proc",
+        "table": {
+            "name": "proc",
+            "pk": [
+                "db",
+                "name",
+                "type"
+            ],
+            "verbose": "proc"
+        },
+        "columns": [
+            {
+                "name": "db",
+                "verbose": "db",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "type",
+                "verbose": "type",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('FUNCTION','PROCEDURE')",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "specific_name",
+                "verbose": "specific_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "language",
+                "verbose": "language",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('SQL')",
+                "allowNull": false,
+                "defaultValue": "SQL",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "sql_data_access",
+                "verbose": "sql_data_access",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('CONTAINS_SQL','NO_SQL','READS_SQL_DATA','MODIFIES_SQL_DATA')",
+                "allowNull": false,
+                "defaultValue": "CONTAINS_SQL",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "is_deterministic",
+                "verbose": "is_deterministic",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('YES','NO')",
+                "allowNull": false,
+                "defaultValue": "NO",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "security_type",
+                "verbose": "security_type",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('INVOKER','DEFINER')",
+                "allowNull": false,
+                "defaultValue": "DEFINER",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "param_list",
+                "verbose": "param_list",
+                "control": {
+                    "text": true
+                },
+                "type": "blob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "returns",
+                "verbose": "returns",
+                "control": {
+                    "text": true
+                },
+                "type": "longblob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "body",
+                "verbose": "body",
+                "control": {
+                    "text": true
+                },
+                "type": "longblob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "definer",
+                "verbose": "definer",
+                "control": {
+                    "text": true
+                },
+                "type": "char(93)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "created",
+                "verbose": "created",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "modified",
+                "verbose": "modified",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "0000-00-00 00:00:00",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "sql_mode",
+                "verbose": "sql_mode",
+                "control": {
+                    "text": true
+                },
+                "type": "set('REAL_AS_FLOAT','PIPES_AS_CONCAT','ANSI_QUOTES','IGNORE_SPACE','NOT_USED','ONLY_FULL_GROUP_BY','NO_UNSIGNED_SUBTRACTION','NO_DIR_IN_CREATE','POSTGRESQL','ORACLE','MSSQL','DB2','MAXDB','NO_KEY_OPTIONS','NO_TABLE_OPTIONS','NO_FIELD_OPTIONS','MYSQL323','MYSQL40','ANSI','NO_AUTO_VALUE_ON_ZERO','NO_BACKSLASH_ESCAPES','STRICT_TRANS_TABLES','STRICT_ALL_TABLES','NO_ZERO_IN_DATE','NO_ZERO_DATE','INVALID_DATES','ERROR_FOR_DIVISION_BY_ZERO','TRADITIONAL','NO_AUTO_CREATE_USER','HIGH_NOT_PRECEDENCE','NO_ENGINE_SUBSTITUTION','PAD_CHAR_TO_FULL_LENGTH')",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "comment",
+                "verbose": "comment",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "character_set_client",
+                "verbose": "character_set_client",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "collation_connection",
+                "verbose": "collation_connection",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "db_collation",
+                "verbose": "db_collation",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "body_utf8",
+                "verbose": "body_utf8",
+                "control": {
+                    "text": true
+                },
+                "type": "longblob",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "procs_priv": {
+        "slug": "procs_priv",
+        "table": {
+            "name": "procs_priv",
+            "pk": [
+                "Host",
+                "Db",
+                "User",
+                "Routine_name",
+                "Routine_type"
+            ],
+            "verbose": "procs_priv"
+        },
+        "columns": [
+            {
+                "name": "Host",
+                "verbose": "Host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(60)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Db",
+                "verbose": "Db",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "User",
+                "verbose": "User",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Routine_name",
+                "verbose": "Routine_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Routine_type",
+                "verbose": "Routine_type",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('FUNCTION','PROCEDURE')",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Grantor",
+                "verbose": "Grantor",
+                "control": {
+                    "text": true
+                },
+                "type": "char(93)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Proc_priv",
+                "verbose": "Proc_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "set('Execute','Alter Routine','Grant')",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Timestamp",
+                "verbose": "Timestamp",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "proxies_priv": {
+        "slug": "proxies_priv",
+        "table": {
+            "name": "proxies_priv",
+            "pk": [
+                "Host",
+                "User",
+                "Proxied_host",
+                "Proxied_user"
+            ],
+            "verbose": "proxies_priv"
+        },
+        "columns": [
+            {
+                "name": "Host",
+                "verbose": "Host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(60)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "User",
+                "verbose": "User",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Proxied_host",
+                "verbose": "Proxied_host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(60)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Proxied_user",
+                "verbose": "Proxied_user",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "With_grant",
+                "verbose": "With_grant",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Grantor",
+                "verbose": "Grantor",
+                "control": {
+                    "text": true
+                },
+                "type": "char(93)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Timestamp",
+                "verbose": "Timestamp",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "server_cost": {
+        "slug": "server_cost",
+        "table": {
+            "name": "server_cost",
+            "pk": "cost_name",
+            "verbose": "server_cost"
+        },
+        "columns": [
+            {
+                "name": "cost_name",
+                "verbose": "cost_name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "cost_value",
+                "verbose": "cost_value",
+                "control": {
+                    "text": true
+                },
+                "type": "float",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "last_update",
+                "verbose": "last_update",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "comment",
+                "verbose": "comment",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(1024)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "servers": {
+        "slug": "servers",
+        "table": {
+            "name": "servers",
+            "pk": "Server_name",
+            "verbose": "servers"
+        },
+        "columns": [
+            {
+                "name": "Server_name",
+                "verbose": "Server_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Host",
+                "verbose": "Host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Db",
+                "verbose": "Db",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Username",
+                "verbose": "Username",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Password",
+                "verbose": "Password",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Port",
+                "verbose": "Port",
+                "control": {
+                    "text": true
+                },
+                "type": "int(4)",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Socket",
+                "verbose": "Socket",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Wrapper",
+                "verbose": "Wrapper",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Owner",
+                "verbose": "Owner",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "slave_master_info": {
+        "slug": "slave_master_info",
+        "table": {
+            "name": "slave_master_info",
+            "pk": "Channel_name",
+            "verbose": "slave_master_info"
+        },
+        "columns": [
+            {
+                "name": "Number_of_lines",
+                "verbose": "Number_of_lines",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Master_log_name",
+                "verbose": "Master_log_name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Master_log_pos",
+                "verbose": "Master_log_pos",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Host",
+                "verbose": "Host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "User_name",
+                "verbose": "User_name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "User_password",
+                "verbose": "User_password",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Port",
+                "verbose": "Port",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Connect_retry",
+                "verbose": "Connect_retry",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Enabled_ssl",
+                "verbose": "Enabled_ssl",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ssl_ca",
+                "verbose": "Ssl_ca",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ssl_capath",
+                "verbose": "Ssl_capath",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ssl_cert",
+                "verbose": "Ssl_cert",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ssl_cipher",
+                "verbose": "Ssl_cipher",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ssl_key",
+                "verbose": "Ssl_key",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ssl_verify_server_cert",
+                "verbose": "Ssl_verify_server_cert",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Heartbeat",
+                "verbose": "Heartbeat",
+                "control": {
+                    "text": true
+                },
+                "type": "float",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Bind",
+                "verbose": "Bind",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ignored_server_ids",
+                "verbose": "Ignored_server_ids",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Uuid",
+                "verbose": "Uuid",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Retry_count",
+                "verbose": "Retry_count",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ssl_crl",
+                "verbose": "Ssl_crl",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Ssl_crlpath",
+                "verbose": "Ssl_crlpath",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Enabled_auto_position",
+                "verbose": "Enabled_auto_position",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(1)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Channel_name",
+                "verbose": "Channel_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Tls_version",
+                "verbose": "Tls_version",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "slave_relay_log_info": {
+        "slug": "slave_relay_log_info",
+        "table": {
+            "name": "slave_relay_log_info",
+            "pk": "Channel_name",
+            "verbose": "slave_relay_log_info"
+        },
+        "columns": [
+            {
+                "name": "Number_of_lines",
+                "verbose": "Number_of_lines",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Relay_log_name",
+                "verbose": "Relay_log_name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Relay_log_pos",
+                "verbose": "Relay_log_pos",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Master_log_name",
+                "verbose": "Master_log_name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Master_log_pos",
+                "verbose": "Master_log_pos",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Sql_delay",
+                "verbose": "Sql_delay",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Number_of_workers",
+                "verbose": "Number_of_workers",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Id",
+                "verbose": "Id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Channel_name",
+                "verbose": "Channel_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "slave_worker_info": {
+        "slug": "slave_worker_info",
+        "table": {
+            "name": "slave_worker_info",
+            "pk": [
+                "Id",
+                "Channel_name"
+            ],
+            "verbose": "slave_worker_info"
+        },
+        "columns": [
+            {
+                "name": "Id",
+                "verbose": "Id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Relay_log_name",
+                "verbose": "Relay_log_name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Relay_log_pos",
+                "verbose": "Relay_log_pos",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Master_log_name",
+                "verbose": "Master_log_name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Master_log_pos",
+                "verbose": "Master_log_pos",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Checkpoint_relay_log_name",
+                "verbose": "Checkpoint_relay_log_name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Checkpoint_relay_log_pos",
+                "verbose": "Checkpoint_relay_log_pos",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Checkpoint_master_log_name",
+                "verbose": "Checkpoint_master_log_name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Checkpoint_master_log_pos",
+                "verbose": "Checkpoint_master_log_pos",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Checkpoint_seqno",
+                "verbose": "Checkpoint_seqno",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Checkpoint_group_size",
+                "verbose": "Checkpoint_group_size",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Checkpoint_group_bitmap",
+                "verbose": "Checkpoint_group_bitmap",
+                "control": {
+                    "text": true
+                },
+                "type": "blob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Channel_name",
+                "verbose": "Channel_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "slow_log": {
+        "slug": "slow_log",
+        "table": {
+            "name": "slow_log",
+            "pk": "",
+            "verbose": "slow_log"
+        },
+        "columns": [
+            {
+                "name": "start_time",
+                "verbose": "start_time",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp(6)",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP(6)",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "user_host",
+                "verbose": "user_host",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumtext",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "query_time",
+                "verbose": "query_time",
+                "control": {
+                    "text": true
+                },
+                "type": "time(6)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "lock_time",
+                "verbose": "lock_time",
+                "control": {
+                    "text": true
+                },
+                "type": "time(6)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "rows_sent",
+                "verbose": "rows_sent",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "rows_examined",
+                "verbose": "rows_examined",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "db",
+                "verbose": "db",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(512)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "last_insert_id",
+                "verbose": "last_insert_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "insert_id",
+                "verbose": "insert_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "server_id",
+                "verbose": "server_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "sql_text",
+                "verbose": "sql_text",
+                "control": {
+                    "text": true
+                },
+                "type": "mediumblob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "thread_id",
+                "verbose": "thread_id",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(21) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "tables_priv": {
+        "slug": "tables_priv",
+        "table": {
+            "name": "tables_priv",
+            "pk": [
+                "Host",
+                "Db",
+                "User",
+                "Table_name"
+            ],
+            "verbose": "tables_priv"
+        },
+        "columns": [
+            {
+                "name": "Host",
+                "verbose": "Host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(60)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Db",
+                "verbose": "Db",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "User",
+                "verbose": "User",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Table_name",
+                "verbose": "Table_name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Grantor",
+                "verbose": "Grantor",
+                "control": {
+                    "text": true
+                },
+                "type": "char(93)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Timestamp",
+                "verbose": "Timestamp",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": false,
+                "defaultValue": "CURRENT_TIMESTAMP",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Table_priv",
+                "verbose": "Table_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "set('Select','Insert','Update','Delete','Create','Drop','Grant','References','Index','Alter','Create View','Show view','Trigger')",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Column_priv",
+                "verbose": "Column_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "set('Select','Insert','Update','References')",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "time_zone": {
+        "slug": "time_zone",
+        "table": {
+            "name": "time_zone",
+            "pk": "Time_zone_id",
+            "verbose": "time_zone"
+        },
+        "columns": [
+            {
+                "name": "Time_zone_id",
+                "verbose": "Time_zone_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Use_leap_seconds",
+                "verbose": "Use_leap_seconds",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('Y','N')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "time_zone_leap_second": {
+        "slug": "time_zone_leap_second",
+        "table": {
+            "name": "time_zone_leap_second",
+            "pk": "Transition_time",
+            "verbose": "time_zone_leap_second"
+        },
+        "columns": [
+            {
+                "name": "Transition_time",
+                "verbose": "Transition_time",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Correction",
+                "verbose": "Correction",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "time_zone_name": {
+        "slug": "time_zone_name",
+        "table": {
+            "name": "time_zone_name",
+            "pk": "Name",
+            "verbose": "time_zone_name"
+        },
+        "columns": [
+            {
+                "name": "Name",
+                "verbose": "Name",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Time_zone_id",
+                "verbose": "Time_zone_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "time_zone_transition": {
+        "slug": "time_zone_transition",
+        "table": {
+            "name": "time_zone_transition",
+            "pk": [
+                "Time_zone_id",
+                "Transition_time"
+            ],
+            "verbose": "time_zone_transition"
+        },
+        "columns": [
+            {
+                "name": "Time_zone_id",
+                "verbose": "Time_zone_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Transition_time",
+                "verbose": "Transition_time",
+                "control": {
+                    "text": true
+                },
+                "type": "bigint(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Transition_type_id",
+                "verbose": "Transition_type_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "time_zone_transition_type": {
+        "slug": "time_zone_transition_type",
+        "table": {
+            "name": "time_zone_transition_type",
+            "pk": [
+                "Time_zone_id",
+                "Transition_type_id"
+            ],
+            "verbose": "time_zone_transition_type"
+        },
+        "columns": [
+            {
+                "name": "Time_zone_id",
+                "verbose": "Time_zone_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Transition_type_id",
+                "verbose": "Transition_type_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int(10) unsigned",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Offset",
+                "verbose": "Offset",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Is_DST",
+                "verbose": "Is_DST",
+                "control": {
+                    "text": true
+                },
+                "type": "tinyint(3) unsigned",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Abbreviation",
+                "verbose": "Abbreviation",
+                "control": {
+                    "text": true
+                },
+                "type": "char(8)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "user": {
+        "slug": "user",
+        "table": {
+            "name": "user",
+            "pk": [
+                "Host",
+                "User"
+            ],
+            "verbose": "user"
+        },
+        "columns": [
+            {
+                "name": "Host",
+                "verbose": "Host",
+                "control": {
+                    "text": true
+                },
+                "type": "char(60)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "User",
+                "verbose": "User",
+                "control": {
+                    "text": true
+                },
+                "type": "char(32)",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Select_priv",
+                "verbose": "Select_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Insert_priv",
+                "verbose": "Insert_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Update_priv",
+                "verbose": "Update_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Delete_priv",
+                "verbose": "Delete_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_priv",
+                "verbose": "Create_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Drop_priv",
+                "verbose": "Drop_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Reload_priv",
+                "verbose": "Reload_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Shutdown_priv",
+                "verbose": "Shutdown_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Process_priv",
+                "verbose": "Process_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "File_priv",
+                "verbose": "File_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Grant_priv",
+                "verbose": "Grant_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "References_priv",
+                "verbose": "References_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Index_priv",
+                "verbose": "Index_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Alter_priv",
+                "verbose": "Alter_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Show_db_priv",
+                "verbose": "Show_db_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Super_priv",
+                "verbose": "Super_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_tmp_table_priv",
+                "verbose": "Create_tmp_table_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Lock_tables_priv",
+                "verbose": "Lock_tables_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Execute_priv",
+                "verbose": "Execute_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Repl_slave_priv",
+                "verbose": "Repl_slave_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Repl_client_priv",
+                "verbose": "Repl_client_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_view_priv",
+                "verbose": "Create_view_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Show_view_priv",
+                "verbose": "Show_view_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_routine_priv",
+                "verbose": "Create_routine_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Alter_routine_priv",
+                "verbose": "Alter_routine_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_user_priv",
+                "verbose": "Create_user_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Event_priv",
+                "verbose": "Event_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Trigger_priv",
+                "verbose": "Trigger_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "Create_tablespace_priv",
+                "verbose": "Create_tablespace_priv",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ssl_type",
+                "verbose": "ssl_type",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('','ANY','X509','SPECIFIED')",
+                "allowNull": false,
+                "defaultValue": "",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "ssl_cipher",
+                "verbose": "ssl_cipher",
+                "control": {
+                    "text": true
+                },
+                "type": "blob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "x509_issuer",
+                "verbose": "x509_issuer",
+                "control": {
+                    "text": true
+                },
+                "type": "blob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "x509_subject",
+                "verbose": "x509_subject",
+                "control": {
+                    "text": true
+                },
+                "type": "blob",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "max_questions",
+                "verbose": "max_questions",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11) unsigned",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "max_updates",
+                "verbose": "max_updates",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11) unsigned",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "max_connections",
+                "verbose": "max_connections",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11) unsigned",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "max_user_connections",
+                "verbose": "max_user_connections",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11) unsigned",
+                "allowNull": false,
+                "defaultValue": "0",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "plugin",
+                "verbose": "plugin",
+                "control": {
+                    "text": true
+                },
+                "type": "char(64)",
+                "allowNull": false,
+                "defaultValue": "mysql_native_password",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "authentication_string",
+                "verbose": "authentication_string",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "password_expired",
+                "verbose": "password_expired",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "password_last_changed",
+                "verbose": "password_last_changed",
+                "control": {
+                    "text": true
+                },
+                "type": "timestamp",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "password_lifetime",
+                "verbose": "password_lifetime",
+                "control": {
+                    "text": true
+                },
+                "type": "smallint(5) unsigned",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "account_locked",
+                "verbose": "account_locked",
+                "control": {
+                    "text": true
+                },
+                "type": "enum('N','Y')",
+                "allowNull": false,
+                "defaultValue": "N",
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    }
+}

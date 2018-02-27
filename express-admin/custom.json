@@ -1,0 +1,38 @@
+{
+    "static": {
+        "public": {
+            "local": {
+                "path": "/app/devops/backup/node-v8.4.0-linux-x64/lib/node_modules/express-admin/config/custom/static",
+                "js": [
+                    "/mtm-tags.js",
+                    "/theme.js",
+                    "/images.js",
+                    "/binary.js"
+                ]
+            }
+        }
+    },
+    "events": {
+        "events": "/app/devops/backup/node-v8.4.0-linux-x64/lib/node_modules/express-admin/config/custom/events/events.js"
+    },
+    "getaccount": {
+        "app": {
+            "path"  : "/app/devops/backup/node-v8.4.0-linux-x64/lib/node_modules/express-admin/config/custom/getaccount/app.js",
+            "slug": "getaccount",
+            "verbose": "通过角色名查询登录账号",
+            "mainview": {
+                "show": true
+            }
+        }
+    },
+    "gettoplevel": {
+        "app": {
+            "path"  : "/app/devops/backup/node-v8.4.0-linux-x64/lib/node_modules/express-admin/config/custom/gettoplevel/app.js",
+            "slug": "gettoplevel",
+            "verbose": "查询最高等级的登录账号",
+            "mainview": {
+                "show": true
+            }
+        }
+    }  
+}
